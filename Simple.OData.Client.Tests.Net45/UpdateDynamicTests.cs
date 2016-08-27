@@ -6,7 +6,6 @@ using Xunit;
 
 namespace Simple.OData.Client.Tests
 {
-#if !NET40
     public class UpdateDynamicTests : TestBase
     {
         [Fact]
@@ -287,5 +286,4 @@ namespace Simple.OData.Client.Tests
             Assert.Equal("Test2", ship.ShipName);
         }
     }
-#endif
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xunit;
 
 namespace Simple.OData.Client.Tests
 {
-#if !NET40
     public class DeleteDynamicTests : TestBase
     {
         [Fact]
@@ -100,5 +96,4 @@ namespace Simple.OData.Client.Tests
             Assert.Null(ship);
         }
     }
-#endif
 }

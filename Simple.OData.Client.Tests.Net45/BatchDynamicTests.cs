@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace Simple.OData.Client.Tests
 {
-#if !NET40
     public class BatchDynamicTests : TestBase
     {
         [Fact]
@@ -308,5 +306,4 @@ namespace Simple.OData.Client.Tests
             Assert.Equal(2, (category.Products as IEnumerable<dynamic>).Count());
         }
     }
-#endif
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +6,6 @@ using Xunit;
 
 namespace Simple.OData.Client.Tests
 {
-#if !NET40
     public class InsertDynamicTests : TestBase
     {
         [Fact]
@@ -110,5 +108,4 @@ namespace Simple.OData.Client.Tests
             Assert.Equal("Test1", ship.ShipName);
         }
     }
-#endif
 }

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xunit;
 
 namespace Simple.OData.Client.Tests
 {
-#if !NET40
     public class LinkDynamicTests : TestBase
     {
         [Fact]
@@ -60,5 +56,4 @@ namespace Simple.OData.Client.Tests
             Assert.Null(product.CategoryID);
         }
     }
-#endif
 }

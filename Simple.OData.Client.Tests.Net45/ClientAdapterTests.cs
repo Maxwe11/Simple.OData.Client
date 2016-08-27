@@ -1,16 +1,12 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
-#if !NET40
 using Simple.OData.Client.TestPcl;
-#endif
 using Xunit;
 
 namespace Simple.OData.Client.Tests
 {
     using Entry = System.Collections.Generic.Dictionary<string, object>;
 
-#if !NET40
     public class ClientAdapterTests : TestBase
     {
         private readonly ClientAdapter _adapter;
@@ -58,5 +54,4 @@ namespace Simple.OData.Client.Tests
             Assert.Null(product);
         }
     }
-#endif
 }
